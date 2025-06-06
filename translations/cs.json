@@ -1,0 +1,13 @@
+{
+  "app": {
+    "title": "Zdravím, využil jsem šablony a nápadu",
+    "subtitle": "V desktop layoutu lze s kostami házet a na mobile layout jsem zapojil gyro",
+    "testBtn": "Otestujte v provozu",
+    "toggleTheme": "Přepnout motiv",
+    "selectLanguage": "Vybrat jazyk",
+    "languages": {
+      "cs": "Čeština",
+      "en": "Angličtina"
+    }
+  }
+}

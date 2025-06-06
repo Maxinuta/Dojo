@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: dojo
+  name: dojo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: dojo
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        io.kompose.service: dojo
+    spec:
+      containers:
+        - env:
+            - name: NEXT_TELEMETRY_DISABLED
+              value: "1"
+            - name: NODE_ENV
+              value: production
+          image: sparteq-dojo
+          imagePullPolicy: Never
+          name: dojo
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+      restartPolicy: Always

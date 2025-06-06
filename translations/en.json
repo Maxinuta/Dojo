@@ -1,0 +1,13 @@
+{
+  "app": {
+    "title": "Hello, I used the template and the idea",
+    "subtitle": "In the desktop layout you can roll the dice and on the mobile layout I've included the gyro",
+    "testBtn": "Test in production",
+    "toggleTheme": "Přepnout motiv",
+    "selectLanguage": "Vybrat jazyk",
+    "languages": {
+      "cs": "Čeština",
+      "en": "Angličtina"
+    }
+  }
+}

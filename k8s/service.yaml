@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: D:\BADMIN\Tools\kompose.exe convert
+    kompose.version: 1.35.0 (9532ceef3)
+  labels:
+    io.kompose.service: dojo
+  name: dojo
+spec:
+  type: NodePort
+  ports:
+    - name: "dojo"
+      port: 3003
+      targetPort: 3000
+      nodePort: 30305
+  selector:
+    io.kompose.service: dojo
